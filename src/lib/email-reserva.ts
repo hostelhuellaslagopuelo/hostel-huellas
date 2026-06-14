@@ -18,7 +18,7 @@ export async function sendReservationEmails(r: EmailReservaData): Promise<void> 
   const hostelEmail = process.env.HOSTEL_EMAIL ?? "hostelhuellaslp@gmail.com";
   const tipo = TIPO_LABELS[r.tipoAlojamiento] ?? r.tipoAlojamiento;
 
-  await Promise.all([
+  const [guest, hostel] = await Promise.all([
     resend.emails.send({
       from,
       to: [r.email],
@@ -32,4 +32,7 @@ export async function sendReservationEmails(r: EmailReservaData): Promise<void> 
       html: hostelNotificationHtml(r),
     }),
   ]);
+
+  if (guest.error) console.error("[email] guest failed:", guest.error);
+  if (hostel.error) console.error("[email] hostel failed:", hostel.error);
 }
