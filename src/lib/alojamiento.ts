@@ -76,7 +76,7 @@ export const habitaciones: Habitacion[] = [
     desc: "Habitación privada con vista a los tres picos. Tu espacio, tu ritmo.",
     descLong:
       "Nombrada en honor a las tres cumbres que se ven desde la ventana. La habitación más luminosa del hostel — para quienes quieren privacidad sin perder el espíritu de comunidad. Seguís tomando mate en el patio, pero la habitación es tuya.",
-    capacity: "1, 2 o 3 personas",
+    capacity: "Hasta 3 personas",
     price: "$25.000",
     tag: "Por noche / persona",
     img: "/assets/habitaciones/privada-picos-1.jpg",
@@ -105,7 +105,7 @@ export const habitaciones: Habitacion[] = [
     desc: "Habitación privada con carácter propio. Rústica, cálida y tranquila.",
     descLong:
       "La habitación más íntima de Huellas. Con una atmósfera cálida y rústica que invita a quedarse. Para quienes disfrutan de un espacio con personalidad — donde la decoración cuenta historias y la piedra hace el resto.",
-    capacity: "1 o 2 personas",
+    capacity: "Hasta 4 personas",
     price: "$25.000",
     tag: "Por noche / persona",
     img: "/assets/habitaciones/privada-cuevas-1.jpg",
@@ -135,7 +135,7 @@ export const habitaciones: Habitacion[] = [
     desc: "Habitación privada espaciosa. Tranquila, luminosa y con ambiente de refugio.",
     descLong:
       "Nombrada en honor al huemul, el ciervo emblemático de la Patagonia. Amplia y luminosa, ideal para quien quiere descansar de verdad. La calma de un refugio de montaña con toda la calidez del hostel a metros.",
-    capacity: "1, 2 o 3 personas",
+    capacity: "Hasta 3 personas",
     price: "$25.000",
     tag: "Por noche / persona",
     img: "/assets/habitaciones/privada-huemul-1.jpg",
@@ -158,12 +158,12 @@ export const habitaciones: Habitacion[] = [
   },
   {
     slug: "departamento",
-    title: "Departamento Currumahuida",
+    title: "Departamento",
     subtitle: "Tu casa en Lago Puelo",
     desc: "Con cocina y baño propios. Tu casa en Lago Puelo. Para 3 o 4 personas.",
     descLong:
       "Con cocina propia, baño y living. La opción más independiente de Huellas, ideal para estadías largas, parejas o grupos que quieren tener su propio espacio sin alejarse del hostel. Cocinás a tu hora, llegás cuando querés. Tu casa en Lago Puelo.",
-    capacity: "3 o 4 personas",
+    capacity: "Hasta 4 personas",
     price: "Consultar",
     tag: "Por noche",
     img: "/assets/habitaciones/depto-1.jpg",

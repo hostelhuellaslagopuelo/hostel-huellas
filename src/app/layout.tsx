@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Hostel Huellas Puelo" }],
   creator: "Hostel Huellas Puelo",
+  icons: {
+    icon: "/assets/logo.png",
+    apple: "/assets/logo.png",
+  },
   openGraph: {
     type: "website",
     locale: "es_AR",

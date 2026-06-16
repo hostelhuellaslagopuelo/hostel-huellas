@@ -117,7 +117,8 @@ export const actividades: Actividad[] = [
     dificultad: "Fácil-Media",
     duracion: "1 a 2 horas",
     llevar: "Agua, calzado con grip, protector solar",
-    img: "/exp-trek.jpg",
+    img: "/assets/experiencias/mirador-la-playita.webp",
+    images: ["/assets/experiencias/mirador-la-playita.webp"],
     tag: "Mirador",
   },
   {
@@ -129,7 +130,11 @@ export const actividades: Actividad[] = [
     dificultad: "Muy fácil",
     duracion: "1 a 2 horas",
     llevar: "Calzado cómodo, cámara",
-    img: "/exp-trek.jpg",
+    img: "/assets/experiencias/jardin-botanico.jpg",
+    images: [
+      "/assets/experiencias/jardin-botanico.jpg",
+      "/assets/experiencias/jardin-botanico-2.jpg",
+    ],
     tag: "Naturaleza",
   },
   {
@@ -141,7 +146,11 @@ export const actividades: Actividad[] = [
     dificultad: "Fácil",
     duracion: "3 a 6 horas",
     llevar: "Ropa cómoda, calzado cerrado",
-    img: "/exp-trek.jpg",
+    img: "/assets/experiencias/cabalgata-rio-azul.webp",
+    images: [
+      "/assets/experiencias/cabalgata-rio-azul.webp",
+      "/assets/experiencias/cabalgata-rio-azul-2.webp",
+    ],
     tag: "Cabalgata",
   },
   {
@@ -153,7 +162,8 @@ export const actividades: Actividad[] = [
     dificultad: "Fácil",
     duracion: "Medio día o día completo",
     llevar: "Ropa impermeable, botas de vadeo si tenés",
-    img: "/exp-trek.jpg",
+    img: "/assets/experiencias/pesca-rio-puelo.jpg",
+    images: ["/assets/experiencias/pesca-rio-puelo.jpg"],
     tag: "Pesca",
   },
   {
@@ -165,20 +175,9 @@ export const actividades: Actividad[] = [
     dificultad: "Variable (según vía)",
     duracion: "Medio día a día completo",
     llevar: "Equipo de escalada, zapatillas de pared",
-    img: "/exp-trek.jpg",
+    img: "/assets/experiencias/escalada-cerro-currumahuida.jpg",
+    images: ["/assets/experiencias/escalada-cerro-currumahuida.jpg"],
     tag: "Escalada",
-  },
-  {
-    slug: "excursion-4x4",
-    title: "Excursión en 4x4 por caminos de montaña",
-    desc: "Para los lugares donde no llega ningún sendero. Vadeando arroyos, subiendo montañas y atravesando barriales hasta rincones de gran valor escénico que la mayoría de los turistas nunca ve.",
-    descLong:
-      "La mayor parte de los viajeros en Lago Puelo no ve más allá de los senderos del parque. La excursión en 4x4 existe para los que quieren más: rincones del valle y la pre-cordillera a los que no llega ningún sendero marcado. Vadear arroyos, subir huellones de montaña, cruzar barriales y llegar a puestos de montaña, cascadas remotas y miradores inéditos. El vehículo hace el trabajo duro — el pasajero solo necesita tener ganas de ver paisajes que la mayoría de los turistas no conoce. Ideal como complemento a las actividades de a pie, especialmente para quienes viajan en grupo.",
-    dificultad: "Sin esfuerzo físico",
-    duracion: "Medio día o día completo",
-    llevar: "Ropa para el clima, cámara",
-    img: "/exp-trek.jpg",
-    tag: "Aventura",
   },
   {
     slug: "paseo-barco",
@@ -189,7 +188,8 @@ export const actividades: Actividad[] = [
     dificultad: "Muy fácil",
     duracion: "2 a 4 horas",
     llevar: "Abrigo (en el agua refresca), protector solar",
-    img: "/exp-trek.jpg",
+    img: "/assets/experiencias/paseo-en-barco-pasarela.webp",
+    images: ["/assets/experiencias/paseo-en-barco-pasarela.webp"],
     tag: "Navegación",
   },
   {
@@ -201,7 +201,8 @@ export const actividades: Actividad[] = [
     dificultad: "Muy fácil",
     duracion: "1 a 2 horas",
     llevar: "Abrigo, mate, cámara",
-    img: "/exp-trek.jpg",
+    img: "/assets/experiencias/paseo-en-barco-pasarela.webp",
+    images: ["/assets/experiencias/paseo-en-barco-pasarela.webp"],
     tag: "Paisaje",
   },
 ];
