@@ -10,24 +10,23 @@ export function MaxiSection() {
             Tu guía
           </span>
           <h2 className="font-serif text-4xl md:text-5xl font-medium text-forest leading-[1.05] text-balance">
-            Creció en esta montaña. <em>Ahora quiere mostrártela.</em>
+            Conoce cada sendero. <em>Y quiere que vos también.</em>
           </h2>
           <div className="space-y-5 text-ink/75 leading-relaxed text-lg max-w-[48ch]">
             <p>
-              Maxi es guía de montaña matriculado y fundador de Huellas Puelo.
+              Maxi es guía turismo y guía baqueano, fundador de Huellas Puelo.
               Antes de transformar la casa familiar en hostel, pasó años
               recorriendo cada sendero, arroyo y rincón de la Comarca Andina.
             </p>
             <p>
-              Lo que busca que te lleves no es una foto en el cerro — es la
+              Lo que busca que te lleves no es una foto en el cerro, es la
               sensación de haber conocido un lugar de verdad. Sin filtros, sin
               grupos masivos, sin itinerarios rígidos.
             </p>
           </div>
           <div className="p-6 bg-paper ring-1 ring-black/5 rounded-sm max-w-md">
             <p className="font-serif italic text-lg text-forest leading-snug">
-              "Quiero que la gente se vaya con algo que no pueden comprar:
-              conocer la montaña desde adentro."
+              "Prefiero que alguien vuelva con una historia que con una foto."
             </p>
             <p className="text-[10px] uppercase tracking-[0.25em] mt-4 text-moss font-semibold">
               Maxi · Guía & Fundador
