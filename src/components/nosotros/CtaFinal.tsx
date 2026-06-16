@@ -21,7 +21,7 @@ export function CtaFinal() {
             Cada huella en esa pared es <em>una persona que pasó por acá</em>.
           </h2>
           <p className="text-ink/70 text-lg leading-relaxed max-w-[48ch]">
-            Más de 2.000 huellas de 32 países. Algunos volvieron cuatro o cinco
+            Más de 200 huellas de 32 países. Algunos volvieron cuatro o cinco
             temporadas. Algunos se mudaron cerca. Algunos conocieron acá a sus
             mejores amigos.
           </p>

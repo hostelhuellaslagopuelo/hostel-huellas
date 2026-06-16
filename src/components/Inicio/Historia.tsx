@@ -47,7 +47,7 @@ export function Historia() {
           <div className="grid grid-cols-3 gap-6 pt-6 max-w-md">
             {[
               { n: "2017", l: "Año de inicio" },
-              { n: "+100", l: "Huellas pintadas" },
+              { n: "+200", l: "Huellas pintadas" },
               { n: "20", l: "Países visitantes" },
             ].map((s) => (
               <div key={s.n}>

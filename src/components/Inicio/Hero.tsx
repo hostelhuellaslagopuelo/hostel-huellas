@@ -49,7 +49,7 @@ export function Hero() {
             Desde 2017
           </span>
           <h1 className="font-serif text-5xl md:text-7xl leading-[0.93] text-balance font-medium tracking-tight text-paper">
-            No vengas solo a hospedarte.{" "}
+            Veni a hospedarte,{" "}
             <em className="text-wood">Vení a dejar tu huella.</em>
           </h1>
           <p className="text-lg md:text-xl text-pretty max-w-[52ch] leading-relaxed text-paper/85 font-light">

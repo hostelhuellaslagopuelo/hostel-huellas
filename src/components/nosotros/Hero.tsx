@@ -8,7 +8,7 @@ export function Hero() {
             Nosotros
           </span>
           <h1 className="font-serif text-5xl md:text-7xl font-medium text-paper leading-[0.95] text-balance">
-            El hostel tiene alma porque <em>Maxi la puso ahí</em>.
+            Detras de cada huella hay <em>una misma persona</em>.
           </h1>
           <p className="text-lg md:text-xl text-paper/70 max-w-[48ch] leading-relaxed">
             Huellas no es un proyecto de negocios. Es la extensión de una

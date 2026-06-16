@@ -10,19 +10,15 @@ export function Historia() {
             </span>
             <div className="mt-6 space-y-6">
               <div className="border-l-2 border-clay pl-6">
-                <div className="font-serif text-2xl text-clay italic">
-                  1990s
-                </div>
-                <p className="text-ink/60 text-sm mt-1">
-                  Crece en la Comarca Andina
-                </p>
+                <div className="font-serif text-2xl text-clay italic">2001</div>
+                <p className="text-ink/60 text-sm mt-1">Se muda a Lago Puelo</p>
               </div>
               <div className="border-l-2 border-clay/50 pl-6">
                 <div className="font-serif text-2xl text-clay/70 italic">
-                  2010s
+                  2016
                 </div>
                 <p className="text-ink/60 text-sm mt-1">
-                  Se forma como guía de montaña
+                  Se recibe como guía de turismo
                 </p>
               </div>
               <div className="border-l-2 border-clay pl-6">
@@ -34,7 +30,7 @@ export function Historia() {
                   Hoy
                 </div>
                 <p className="text-ink/60 text-sm mt-1">
-                  +2.000 huellas, 32 países, temporada a temporada
+                  +200 huellas, 32 países, temporada a temporada
                 </p>
               </div>
             </div>
@@ -42,16 +38,15 @@ export function Historia() {
 
           <div className="space-y-6 text-lg text-ink/80 leading-relaxed">
             <p>
-              Maxi creció en la Comarca Andina. No como turista de verano — como
-              habitante que conoce cada sendero, cada arroyo, cada nombre de
-              cerro que no aparece en los mapas oficiales. La montaña no es su
-              negocio: es su idioma.
+              Maxi creció en la Comarca Andina. No como turista de verano, sino
+              como habitante que conoce cada sendero, cada arroyo, cada nombre
+              de cerro que no aparece en los mapas oficiales. La montaña no es
+              su negocio, es su lugar.
             </p>
             <p>
-              Estudió guía de turismo y guía de montaña. Pasó años llevando
-              grupos por el Parque Nacional, aprendiendo a leer el tiempo, el
-              bosque, el ritmo de cada persona. Después eligió hacer algo más
-              permanente.
+              Estudió guía de turismo, es guía baqueano. Pasó años compartiendo
+              con grupos el Parque Nacional, aprendiendo a leer el tiempo, el
+              bosque, el ritmo de cada persona.
             </p>
             <p>
               En 2017, la casa familiar de Lago Puelo se convirtió en Huellas.
