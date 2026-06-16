@@ -7,6 +7,14 @@ export function Actividades({ actividades }: { actividades: Actividad[] }) {
     <section className="bg-paper py-20 md:py-28">
       <div className="texture-grain absolute inset-0" />
       <div className="max-w-7xl mx-auto px-6 relative">
+        <div className="mb-12">
+          <span className="text-[11px] uppercase tracking-[0.3em] text-clay font-semibold">
+            Salidas con Maxi
+          </span>
+          <h2 className="font-serif text-4xl md:text-5xl font-medium text-forest mt-4 leading-[1.05] text-balance max-w-2xl">
+            Trekking y montaña guiados por quien más conoce este lugar.
+          </h2>
+        </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {actividades.map((a) => (
             <Link

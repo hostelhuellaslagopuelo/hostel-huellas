@@ -6,6 +6,7 @@ import { actividades } from "@/lib/actividades";
 import { CtaComponent } from "@/components/shared/CtaComponent";
 import { Hero } from "@/components/experiencias/Hero";
 import { Actividades } from "@/components/experiencias/Actividades";
+import { OtrasActividades } from "@/components/experiencias/OtrasActividades";
 import { MaxiSection } from "@/components/experiencias/MaxiSection";
 
 export const metadata = {
@@ -28,12 +29,16 @@ export const metadata = {
 };
 
 export default function ExperienciasPage() {
+  const maxiActividades = actividades.filter((a) => a.esDeMaxi);
+  const otrasActividades = actividades.filter((a) => !a.esDeMaxi);
+
   return (
     <>
       <Header />
       <main>
         <Hero />
-        <Actividades actividades={actividades} />
+        <Actividades actividades={maxiActividades} />
+        <OtrasActividades actividades={otrasActividades} />
         <MaxiSection />
         <CtaComponent
           label="¿Querés que Maxi te lleve?"

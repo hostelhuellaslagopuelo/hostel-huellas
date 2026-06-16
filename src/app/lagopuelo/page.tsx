@@ -36,7 +36,7 @@ export default function LagoPueloPage() {
       <main>
         <Hero />
         <Introduccion />
-        <Actividades actividades={actividades.slice(0, 6)} />
+        <Actividades actividades={actividades.filter((a) => a.esDeMaxi)} />
         <Temporadas />
         <ComoLlegar />
         <CtaComponent

@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { actividades } from "@/lib/actividades";
 
+const maxiActividades = actividades.filter((a) => a.esDeMaxi);
+
 export function ExperienciasPreview() {
   const trackRef = useRef<HTMLDivElement>(null);
   const [canPrev, setCanPrev] = useState(false);
@@ -83,7 +85,7 @@ export function ExperienciasPreview() {
           className="flex gap-4 md:gap-5 overflow-x-auto snap-x snap-mandatory -mx-6 px-6 md:mx-0 md:px-0"
           style={{ scrollbarWidth: "none" }}
         >
-          {actividades.map((e) => (
+          {maxiActividades.map((e) => (
             <article
               key={e.slug}
               className="snap-start shrink-0 w-[82vw] sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)]"
@@ -128,7 +130,7 @@ export function ExperienciasPreview() {
 
         {/* Dots — mobile only */}
         <div className="flex justify-center gap-2 mt-8 lg:hidden">
-          {actividades.map((e) => (
+          {maxiActividades.map((e) => (
             <button
               key={e.slug}
               aria-label={`Ir a ${e.title}`}

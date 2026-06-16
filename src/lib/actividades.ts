@@ -10,6 +10,7 @@ export type Actividad = {
   images?: string[];
   llevar: string;
   tag: string;
+  esDeMaxi?: boolean;
 };
 
 export const actividades: Actividad[] = [
@@ -30,53 +31,7 @@ export const actividades: Actividad[] = [
       "/assets/experiencias/cerro-churrumahuida-cartel.webp",
     ],
     tag: "Trekking",
-  },
-  {
-    slug: "kayak",
-    title: "Kayak en Lago Puelo",
-    desc: "El agua turquesa del lago vista desde adentro. Sin necesitar experiencia previa, es una de las actividades más disfrutadas de la zona. Hay alquiler dentro del parque o salidas organizadas. Perfecto para una tarde que no querés desperdiciar.",
-    descLong:
-      "Navegar el Lago Puelo en kayak es una de las mejores formas de entender la escala de este lugar. El agua turquesa, el reflejo de los cerros nevados y el silencio del lago — roto solo por el sonido de los remos — crean una experiencia completamente diferente a cualquier sendero. No necesitás experiencia previa: el alquiler dentro del parque incluye chaleco salvavidas y una explicación básica. También hay salidas organizadas en kayak de mar para quienes quieren ir más lejos, bordeando los rincones menos visitados del lago hasta llegar a playas privadas de arena blanca.",
-    dificultad: "Fácil",
-    duracion: "2 a 4 horas",
-    llevar:
-      "Ropa para mojarse, protector solar, chaleco salvavidas (incluido en alquiler)",
-    img: "/assets/experiencias/kayak-lago-puelo.jpg",
-    images: ["/assets/experiencias/kayak-lago-puelo.jpg"],
-    tag: "Agua",
-  },
-  {
-    slug: "mirador-rio-blanco",
-    title: "Mirador del Río Blanco",
-    desc: "Cruzás el puente colgante sobre el Río Azul al norte del pueblo y llegás a uno de los miradores más fotogénicos de la zona. Vistas al río y sus cascadas, camino ancho y sin desnivel pronunciado.",
-    descLong:
-      "El acceso al Mirador del Río Blanco arranca en el puente colgante sobre el Río Azul, al norte del casco urbano de Lago Puelo. El sendero sigue la margen del río entre cipreses y arrayanes con muy poco desnivel — es una de las caminatas más accesibles de la zona y perfecta para días en que querés salir sin comprometerte con una larga jornada. Al llegar al mirador, se abre una vista sobre el río y sus saltos de agua que combina bien con la vegetación del bosque de ribera. En el regreso vale la pena bajar a la costanera del río para ver las piletas naturales que se forman entre las rocas.",
-    dificultad: "Fácil",
-    duracion: "3 a 4 horas",
-    llevar: "Calzado cómodo, agua, algo para comer",
-    img: "/assets/experiencias/mirador-rio-blanco.webp",
-    images: [
-      "/assets/experiencias/mirador-rio-blanco.webp",
-      "/assets/experiencias/mirador-rio-blanco-2.webp",
-      "/assets/experiencias/mirador-rio-blanco-cartel.webp",
-    ],
-    tag: "Caminata familiar",
-  },
-  {
-    slug: "bosque-sombras",
-    title: "Bosque de las Sombras",
-    desc: "Pasarelas de madera, arrayanes, niebla entre los árboles y carteles sobre la fauna del lugar. Un sendero corto dentro del Parque Nacional que en días nublados se convierte en algo completamente distinto. Uno de los favoritos de los que vuelven.",
-    descLong:
-      "El Bosque de las Sombras es un circuito corto dentro del Parque Nacional Lago Puelo que recorre un bosque puro de arrayán — el árbol de corteza fría al tacto y color canela que caracteriza el bosque valdiviano. Las pasarelas de madera se elevan sobre el suelo para proteger las raíces superficiales de los arrayanes, y la señalización explica el ecosistema local de forma clara. En días nublados o con algo de lluvia, la luz que filtra entre los troncos retorcidos y el musgo en el suelo lo convierten en un sendero de otra dimensión. Corto e íntimo — uno de los favoritos de los huéspedes que ya conocen los circuitos largos.",
-    dificultad: "Fácil",
-    duracion: "1 a 2 horas",
-    llevar: "Impermeable, calzado cómodo",
-    img: "/assets/experiencias/bosque-de-las-sombras-lagopuelo-1.jpg",
-    images: [
-      "/assets/experiencias/bosque-de-las-sombras-lagopuelo-1.jpg",
-      "/assets/experiencias/bosque-de-las-sombras-cartel.jpg",
-    ],
-    tag: "Bosque nativo",
+    esDeMaxi: true,
   },
   {
     slug: "refugio-motoco",
@@ -90,6 +45,7 @@ export const actividades: Actividad[] = [
     img: "/assets/experiencias/refugio-el-motoco.webp",
     images: ["/assets/experiencias/refugio-el-motoco.webp"],
     tag: "Trekking con pernocte",
+    esDeMaxi: true,
   },
   {
     slug: "sendero-los-hitos",
@@ -107,6 +63,42 @@ export const actividades: Actividad[] = [
       "/assets/experiencias/sendero-los-hitos-2.jpg",
     ],
     tag: "Trekking largo",
+    esDeMaxi: true,
+  },
+  {
+    slug: "mirador-rio-blanco",
+    title: "Mirador del Río Blanco",
+    desc: "Cruzás el puente colgante sobre el Río Azul al norte del pueblo y llegás a uno de los miradores más fotogénicos de la zona. Vistas al río y sus cascadas, camino ancho y sin desnivel pronunciado.",
+    descLong:
+      "El acceso al Mirador del Río Blanco arranca en el puente colgante sobre el Río Azul, al norte del casco urbano de Lago Puelo. El sendero sigue la margen del río entre cipreses y arrayanes con muy poco desnivel — es una de las caminatas más accesibles de la zona y perfecta para días en que querés salir sin comprometerte con una larga jornada. Al llegar al mirador, se abre una vista sobre el río y sus saltos de agua que combina bien con la vegetación del bosque de ribera. En el regreso vale la pena bajar a la costanera del río para ver las piletas naturales que se forman entre las rocas.",
+    dificultad: "Fácil",
+    duracion: "3 a 4 horas",
+    llevar: "Calzado cómodo, agua, algo para comer",
+    img: "/assets/experiencias/mirador-rio-blanco.webp",
+    images: [
+      "/assets/experiencias/mirador-rio-blanco.webp",
+      "/assets/experiencias/mirador-rio-blanco-2.webp",
+      "/assets/experiencias/mirador-rio-blanco-cartel.webp",
+    ],
+    tag: "Caminata familiar",
+    esDeMaxi: true,
+  },
+  {
+    slug: "bosque-sombras",
+    title: "Bosque de las Sombras",
+    desc: "Pasarelas de madera, arrayanes, niebla entre los árboles y carteles sobre la fauna del lugar. Un sendero corto dentro del Parque Nacional que en días nublados se convierte en algo completamente distinto. Uno de los favoritos de los que vuelven.",
+    descLong:
+      "El Bosque de las Sombras es un circuito corto dentro del Parque Nacional Lago Puelo que recorre un bosque puro de arrayán — el árbol de corteza fría al tacto y color canela que caracteriza el bosque valdiviano. Las pasarelas de madera se elevan sobre el suelo para proteger las raíces superficiales de los arrayanes, y la señalización explica el ecosistema local de forma clara. En días nublados o con algo de lluvia, la luz que filtra entre los troncos retorcidos y el musgo en el suelo lo convierten en un sendero de otra dimensión. Corto e íntimo — uno de los favoritos de los huéspedes que ya conocen los circuitos largos.",
+    dificultad: "Fácil",
+    duracion: "1 a 2 horas",
+    llevar: "Impermeable, calzado cómodo",
+    img: "/assets/experiencias/bosque-de-las-sombras-lagopuelo-1.jpg",
+    images: [
+      "/assets/experiencias/bosque-de-las-sombras-lagopuelo-1.jpg",
+      "/assets/experiencias/bosque-de-las-sombras-cartel.jpg",
+    ],
+    tag: "Bosque nativo",
+    esDeMaxi: true,
   },
   {
     slug: "mirador-la-playita",
@@ -120,22 +112,35 @@ export const actividades: Actividad[] = [
     img: "/assets/experiencias/mirador-la-playita.webp",
     images: ["/assets/experiencias/mirador-la-playita.webp"],
     tag: "Mirador",
+    esDeMaxi: true,
   },
   {
-    slug: "jardin-botanico",
-    title: "Jardín Botánico del Parque Nacional",
-    desc: "16 hectáreas señalizadas con información sobre la flora patagónica nativa. Pitras, arrayanes, lengas. Ideal para quienes quieren entender el bosque mientras lo caminan. Circuitos cortos y bien marcados.",
+    slug: "escalada",
+    title: "Escalada en Cerro Currumahuida",
+    desc: "El mismo cerro, otra dimensión. La roca de granito a 10 minutos del centro tiene 5 sectores equipados con unas 30 vías, desde 5to grado hasta 7C. Una actividad joven en Lago Puelo pero con mucho futuro.",
     descLong:
-      "El Jardín Botánico del Parque Nacional Lago Puelo abarca 16 hectáreas con circuitos señalizados que explican la flora nativa del bosque valdiviano. Los carteles identifican pitras, arrayanes, lengas, cipreses de la cordillera y otras especies, con información sobre su rol en el ecosistema. Es la actividad perfecta para los viajeros que quieren entender lo que están viendo — no solo caminar entre árboles, sino saber qué son y por qué importan. El acceso está próximo al Bosque de las Sombras, así que se pueden combinar en la misma salida.",
-    dificultad: "Muy fácil",
-    duracion: "1 a 2 horas",
-    llevar: "Calzado cómodo, cámara",
-    img: "/assets/experiencias/jardin-botanico.jpg",
-    images: [
-      "/assets/experiencias/jardin-botanico.jpg",
-      "/assets/experiencias/jardin-botanico-2.jpg",
-    ],
-    tag: "Naturaleza",
+      "El granito del Cerro Currumahuida tiene una calidad de roca excepcional para la escalada deportiva. A diez minutos del centro del pueblo, hay cinco sectores equipados con aproximadamente treinta vías que van desde el quinto grado hasta el 7C — suficiente rango para que tanto principiantes como escaladores experimentados encuentren algo a su nivel. La escalada en Lago Puelo es una disciplina joven, lo que significa que las vías están en excelente estado y hay muy poca gente. Las vistas desde la pared — con el lago abajo y la cordillera frente — son completamente distintas a las del sendero de trekking.",
+    dificultad: "Variable (según vía)",
+    duracion: "Medio día a día completo",
+    llevar: "Equipo de escalada, zapatillas de pared",
+    img: "/assets/experiencias/escalada-cerro-currumahuida.jpg",
+    images: ["/assets/experiencias/escalada-cerro-currumahuida.jpg"],
+    tag: "Escalada",
+    esDeMaxi: true,
+  },
+  {
+    slug: "kayak",
+    title: "Kayak en Lago Puelo",
+    desc: "El agua turquesa del lago vista desde adentro. Sin necesitar experiencia previa, es una de las actividades más disfrutadas de la zona. Hay alquiler dentro del parque o salidas organizadas. Perfecto para una tarde que no querés desperdiciar.",
+    descLong:
+      "Navegar el Lago Puelo en kayak es una de las mejores formas de entender la escala de este lugar. El agua turquesa, el reflejo de los cerros nevados y el silencio del lago — roto solo por el sonido de los remos — crean una experiencia completamente diferente a cualquier sendero. No necesitás experiencia previa: el alquiler dentro del parque incluye chaleco salvavidas y una explicación básica. También hay salidas organizadas en kayak de mar para quienes quieren ir más lejos, bordeando los rincones menos visitados del lago hasta llegar a playas privadas de arena blanca.",
+    dificultad: "Fácil",
+    duracion: "2 a 4 horas",
+    llevar:
+      "Ropa para mojarse, protector solar, chaleco salvavidas (incluido en alquiler)",
+    img: "/assets/experiencias/kayak-lago-puelo.jpg",
+    images: ["/assets/experiencias/kayak-lago-puelo.jpg"],
+    tag: "Agua",
   },
   {
     slug: "cabalgata",
@@ -167,17 +172,20 @@ export const actividades: Actividad[] = [
     tag: "Pesca",
   },
   {
-    slug: "escalada",
-    title: "Escalada en Cerro Currumahuida",
-    desc: "El mismo cerro, otra dimensión. La roca de granito a 10 minutos del centro tiene 5 sectores equipados con unas 30 vías, desde 5to grado hasta 7C. Una actividad joven en Lago Puelo pero con mucho futuro.",
+    slug: "jardin-botanico",
+    title: "Jardín Botánico del Parque Nacional",
+    desc: "16 hectáreas señalizadas con información sobre la flora patagónica nativa. Pitras, arrayanes, lengas. Ideal para quienes quieren entender el bosque mientras lo caminan. Circuitos cortos y bien marcados.",
     descLong:
-      "El granito del Cerro Currumahuida tiene una calidad de roca excepcional para la escalada deportiva. A diez minutos del centro del pueblo, hay cinco sectores equipados con aproximadamente treinta vías que van desde el quinto grado hasta el 7C — suficiente rango para que tanto principiantes como escaladores experimentados encuentren algo a su nivel. La escalada en Lago Puelo es una disciplina joven, lo que significa que las vías están en excelente estado y hay muy poca gente. Las vistas desde la pared — con el lago abajo y la cordillera frente — son completamente distintas a las del sendero de trekking.",
-    dificultad: "Variable (según vía)",
-    duracion: "Medio día a día completo",
-    llevar: "Equipo de escalada, zapatillas de pared",
-    img: "/assets/experiencias/escalada-cerro-currumahuida.jpg",
-    images: ["/assets/experiencias/escalada-cerro-currumahuida.jpg"],
-    tag: "Escalada",
+      "El Jardín Botánico del Parque Nacional Lago Puelo abarca 16 hectáreas con circuitos señalizados que explican la flora nativa del bosque valdiviano. Los carteles identifican pitras, arrayanes, lengas, cipreses de la cordillera y otras especies, con información sobre su rol en el ecosistema. Es la actividad perfecta para los viajeros que quieren entender lo que están viendo — no solo caminar entre árboles, sino saber qué son y por qué importan. El acceso está próximo al Bosque de las Sombras, así que se pueden combinar en la misma salida.",
+    dificultad: "Muy fácil",
+    duracion: "1 a 2 horas",
+    llevar: "Calzado cómodo, cámara",
+    img: "/assets/experiencias/jardin-botanico.jpg",
+    images: [
+      "/assets/experiencias/jardin-botanico.jpg",
+      "/assets/experiencias/jardin-botanico-2.jpg",
+    ],
+    tag: "Naturaleza",
   },
   {
     slug: "paseo-barco",
