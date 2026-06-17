@@ -19,7 +19,7 @@ export const actividades: Actividad[] = [
     title: "Cerro Currumahuida",
     desc: "La cima más icónica de Lago Puelo. Desde arriba se ve el lago entero, el valle y la cordillera en todas direcciones. Los últimos 100 metros se ponen intensos — pero las vistas lo pagan con creces.",
     descLong:
-      "El Cerro Currumahuida es la cumbre más emblemática del Parque Nacional Lago Puelo. El sendero parte desde la playa del parque y asciende de forma sostenida por bosque nativo de ciprés y lenga hasta salir a la zona rocosa. En los últimos cien metros la pendiente se empina y hay que apoyar manos en algunos tramos — pero no requiere equipo técnico. Desde la cima se domina una vista de 360°: el lago turquesa abajo, el valle del Azul al norte, la frontera con Chile al oeste y las cumbres nevadas en todas las direcciones. Un día claro en Currumahuida es de los que no se olvidan.",
+      "La cumbre del Cerro Currumahuida es el trekking mas emblemático del Parque Nacional Lago Puelo. El sendero asciende de forma sostenida por bosque nativo de ciprés y lenga hasta salir a la zona rocosa afectada por incendio. En los últimos cien metros la pendiente se empina y hay que apoyar manos en algunos tramos — pero no requiere equipo técnico. Desde la cima se domina una vista de 360°: el lago turquesa abajo, el valle del Azul al norte, la frontera con Chile al oeste y las cumbres nevadas en todas las direcciones. Un día claro en Currumahuida es de los que no se olvidan.",
     dificultad: "Media",
     duracion: "6 a 8 horas",
     llevar:
@@ -52,9 +52,9 @@ export const actividades: Actividad[] = [
     title: "Sendero Los Hitos — Límite con Chile",
     desc: "Una de las caminatas más completas del parque. Sale de la pasarela del Río Azul y termina en el límite con Chile, donde el Río Puelo conecta ambos países. Se puede continuar al lado chileno.",
     descLong:
-      "El Sendero Los Hitos es la ruta más completa del Parque Nacional Lago Puelo. Parte desde la pasarela sobre el Río Azul y atraviesa bosque valdiviano nativo durante varios kilómetros hasta llegar al límite internacional marcado por los hitos en el Río Puelo. En Gendarmería se puede hacer el trámite migratorio para cruzar a Chile y continuar por el lago Inferior chileno — uno de los pasos de montaña más hermosos y menos concurridos de la Patagonia. Se puede hacer en un día largo (madrugando) o planificarlo como travesía de dos días con campamento en la frontera.",
+      "El Sendero Los Hitos es la ruta más completa del Parque Nacional Lago Puelo. Parte desde la pasarela sobre el Río Azul y atraviesa bosque valdiviano nativo durante varios kilómetros hasta llegar al límite internacional marcado por los hitos en el Río Puelo. En Gendarmería se puede hacer el trámite migratorio para cruzar a Chile y continuar por el lago Inferior chileno — uno de los pasos de montaña más hermosos y menos concurridos de la Patagonia. Se trata de una excursión de día completo.",
     dificultad: "Media-alta",
-    duracion: "Día completo o 2 días con acampe",
+    duracion: "Día completo",
     llevar:
       "DNI o pasaporte, equipo de acampe si se queda, agua y comida para el día",
     img: "/assets/experiencias/sendero-los-hitos.jpg",
@@ -63,6 +63,64 @@ export const actividades: Actividad[] = [
       "/assets/experiencias/sendero-los-hitos-2.jpg",
     ],
     tag: "Trekking largo",
+    esDeMaxi: true,
+  },
+  {
+    slug: "bahia-las-percas",
+    title: "Bahía Las Percas",
+    desc: "Una caminata por bosque nativo hasta las orillas del lago Epuyén. El destino es Bahía Las Percas: aguas cristalinas, colores sorprendentes y silencio casi total. Un rincón para desconectar de verdad.",
+    descLong:
+      "El recorrido atraviesa bosque nativo y nos lleva hasta las tranquilas orillas del lago Epuyén, donde se puede descansar y disfrutar del paisaje antes de llegar al destino final. Bahía Las Percas es un rincón de aguas cristalinas y colores que van del turquesa al verde profundo, rodeado de vegetación patagónica. Una caminata ideal para conectar con la naturaleza de Lago Puelo sin necesitar experiencia previa en trekking.",
+    dificultad: "Media-baja",
+    duracion: "3 a 5 horas",
+    llevar: "Comida y agua, protección solar, ropa y calzado adecuados",
+    img: "/exp-trek.jpg",
+    images: ["/exp-trek.jpg"],
+    tag: "Caminata",
+    esDeMaxi: true,
+  },
+  {
+    slug: "piletones-del-manso",
+    title: "Piletones del Manso",
+    desc: "Pozones y pequeñas playas esculpidas por el agua entre las rocas del río Manso. Una breve caminata desde Villegas y aparece uno de los rincones más sorprendentes de la comarca. El traslado está incluido.",
+    descLong:
+      "Tras llegar al paraje Villegas, realizamos una breve caminata de unos 500 metros hasta los Piletones del Manso, formaciones naturales esculpidas por el agua entre las rocas. El imponente río Manso — famoso por sus aguas cristalinas y por ser escenario de rafting — ofrece aquí pozones, pequeñas playas y espacios ideales para relajarse o darse un refrescante baño en los días cálidos. La entrada al predio se abona por separado y su costo se divide entre los ocupantes del vehículo.",
+    dificultad: "Baja",
+    duracion: "Medio día",
+    llevar:
+      "Agua y algo para comer, protección solar, traje de baño y toalla, ropa adecuada",
+    img: "/exp-trek.jpg",
+    images: ["/exp-trek.jpg"],
+    tag: "Río",
+    esDeMaxi: true,
+  },
+  {
+    slug: "piedra-mojada-cajon-motoco",
+    title: "Piedra Mojada y Cajón del Motoco",
+    desc: "Una excursión de día completo a dos de los rincones más espectaculares y menos visitados de Lago Puelo. El Cajón del Motoco visto desde la pasarela y, más arriba, el peñón de Piedra Mojada con vistas al cañón y al Piltriquitrón.",
+    descLong:
+      "A lo largo de un recorrido de aproximadamente 6 a 7 kilómetros por senderos de montaña, nos internamos en un entorno natural único rodeado de bosque nativo y vistas panorámicas. La primera parada es el Cajón del Motoco, un impresionante encajonamiento del río que se observa desde la pasarela que conduce al refugio. Más adelante, alcanzamos Piedra Mojada — un magnífico peñón natural con vistas privilegiadas del cañón, el valle de Lago Puelo y el Cerro Piltriquitrón. Una excursión ideal para quienes disfrutan del trekking y los lugares fuera de los circuitos más conocidos.",
+    dificultad: "Media-alta",
+    duracion: "Día completo",
+    llevar:
+      "Agua y comida para la jornada, protección solar, calzado de trekking con buen agarre, ropa adecuada, traje de baño y toalla (opcional)",
+    img: "/exp-trek.jpg",
+    images: ["/exp-trek.jpg"],
+    tag: "Trekking largo",
+    esDeMaxi: true,
+  },
+  {
+    slug: "astroturismo-mirador",
+    title: "Astroturismo en el Mirador",
+    desc: "Una vez por semana, subimos al mirador con vistas al valle para observar las estrellas. Sin telescopios ni tecnicismos — solo el cielo nocturno, buena compañía y algo para picar. Actividad gratuita con inscripción previa.",
+    descLong:
+      "Una propuesta diferente para disfrutar de la noche en Lago Puelo. Una vez por semana nos reunimos en el mirador con vistas privilegiadas al valle y la localidad para compartir una experiencia sencilla y auténtica: observar las estrellas, conversar y disfrutar de un momento agradable en buena compañía. Durante el encuentro compartimos algo para picar y tomar mientras contemplamos el cielo nocturno y las luces del valle desde un entorno natural único. La subida dura unos 20 minutos y el desnivel ronda los 200 metros.",
+    dificultad: "Alta (subida corta de ~200 metros)",
+    duracion: "Hasta 2 horas",
+    llevar: "Ropa cómoda, abrigo para la noche",
+    img: "/exp-trek.jpg",
+    images: ["/exp-trek.jpg"],
+    tag: "Astroturismo",
     esDeMaxi: true,
   },
   {
@@ -81,7 +139,7 @@ export const actividades: Actividad[] = [
       "/assets/experiencias/mirador-rio-blanco-cartel.webp",
     ],
     tag: "Caminata familiar",
-    esDeMaxi: true,
+    esDeMaxi: false,
   },
   {
     slug: "bosque-sombras",
@@ -98,7 +156,7 @@ export const actividades: Actividad[] = [
       "/assets/experiencias/bosque-de-las-sombras-cartel.jpg",
     ],
     tag: "Bosque nativo",
-    esDeMaxi: true,
+    esDeMaxi: false,
   },
   {
     slug: "mirador-la-playita",
@@ -112,7 +170,7 @@ export const actividades: Actividad[] = [
     img: "/assets/experiencias/mirador-la-playita.webp",
     images: ["/assets/experiencias/mirador-la-playita.webp"],
     tag: "Mirador",
-    esDeMaxi: true,
+    esDeMaxi: false,
   },
   {
     slug: "escalada",
@@ -126,7 +184,7 @@ export const actividades: Actividad[] = [
     img: "/assets/experiencias/escalada-cerro-currumahuida.jpg",
     images: ["/assets/experiencias/escalada-cerro-currumahuida.jpg"],
     tag: "Escalada",
-    esDeMaxi: true,
+    esDeMaxi: false,
   },
   {
     slug: "kayak",

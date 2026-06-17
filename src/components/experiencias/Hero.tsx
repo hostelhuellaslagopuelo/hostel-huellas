@@ -11,8 +11,8 @@ export function Hero() {
           <em className="text-wood">Y quiere que vos también.</em>.
         </h1>
         <p className="mt-8 text-lg md:text-xl text-paper/70 max-w-[52ch] leading-relaxed">
-          No es un guía. Es alguien que creció en esta montaña y quiere que la
-          conozcas como él la conoce.
+          Es alguien que creció en esta montaña y quiere que la conozcas como él
+          la conoce.
         </p>
       </div>
     </section>

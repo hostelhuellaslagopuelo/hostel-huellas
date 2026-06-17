@@ -26,8 +26,8 @@ export function Introduccion() {
         </div>
         <div className="grid grid-cols-2 gap-4">
           {[
-            { n: "11.250 ha", l: "Superficie del parque nacional" },
-            { n: "800 m", l: "Altitud sobre el nivel del mar" },
+            { n: "27.000 ha", l: "Superficie del parque nacional" },
+            { n: "200 m", l: "Altitud sobre el nivel del mar" },
             { n: "120 km", l: "Desde Bariloche por ruta" },
             { n: "Todo el año", l: "Abierto para visitar" },
           ].map((f) => (
