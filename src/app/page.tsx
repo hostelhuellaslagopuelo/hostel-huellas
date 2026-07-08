@@ -26,7 +26,14 @@ export const metadata = {
     description:
       "Hostel con alma de aventura en Lago Puelo, Patagonia. Guía de montaña, fogones, comunidad de viajeros y el Parque Nacional en la puerta.",
     url: "/",
-    images: [{ url: "/hero-lake.jpg", width: 1200, height: 630, alt: "Lago Puelo desde Hostel Huellas" }],
+    images: [
+      {
+        url: "/hero-lake.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Lago Puelo desde Hostel Huellas",
+      },
+    ],
   },
   twitter: {
     title: "Hostel Huellas Puelo — Lago Puelo, Patagonia",
@@ -43,8 +50,8 @@ export default function InicioPage() {
       <main>
         <Hero />
         <Historia />
-        <PorQueHuellas />
         <AlojamientoPreview />
+        <PorQueHuellas />
         <ExperienciasPreview />
         <WallOfFootprints />
         <LagoPueloTeaser />
