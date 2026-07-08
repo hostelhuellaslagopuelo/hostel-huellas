@@ -43,7 +43,7 @@ export function MaxiSection() {
         </div>
         <div className="relative">
           <Image
-            src="/maxi-portrait.jpg"
+            src="/assets/maxi-image-2.jpeg"
             alt="Maxi, guía de montaña matriculado y fundador de Hostel Huellas Puelo"
             width={1024}
             height={1024}

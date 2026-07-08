@@ -11,7 +11,7 @@ export function Historia() {
       <div className=" max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 lg:gap-24 items-center relative">
         <div className="relative order-2 lg:order-1">
           <Image
-            src="/maxi-portrait.jpg"
+            src="/assets/maxi-image-2.jpeg"
             alt="Maxi, fundador de Hostel Huellas Puelo, en la cocina del hostel"
             width={1024}
             height={1024}

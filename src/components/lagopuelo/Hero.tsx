@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="relative h-[80vh] min-h-[560px] overflow-hidden">
       <Image
-        src="/explore-puelo.jpg"
+        src="/assets/Lago_Puelo_desde_el_mirador_El_Lago_2020.jpg"
         alt="Vista aérea del Lago Puelo con sus aguas turquesas rodeado de montañas de la Patagonia argentina"
         width={1600}
         height={1024}

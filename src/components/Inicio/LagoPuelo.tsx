@@ -6,7 +6,7 @@ export function LagoPueloTeaser() {
     <section className="relative overflow-hidden">
       <div className="relative h-[50vh] min-h-[380px]">
         <Image
-          src="/explore-puelo.jpg"
+          src="/assets/Lago_Puelo_desde_el_mirador_El_Lago_2020.jpg"
           alt="Vista aérea de Lago Puelo con sus aguas turquesas rodeadas de montañas"
           width={1600}
           height={1024}
