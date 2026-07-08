@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { Footprint } from "../shared/footprint";
 
 export function Hero() {
   const stampRef = useRef<HTMLDivElement>(null);
@@ -31,14 +30,14 @@ export function Hero() {
           className="absolute inset-0 transition-transform duration-300 ease-out will-change-transform"
         >
           <Image
-            src="/assets/paisaje-kayak.webp"
-            alt="Lago Puelo en la Comarca Andina al amanecer, con montañas reflejadas en el agua turquesa"
+            src="/assets/fachada.webp"
+            alt="Fachada del Hostel Huellas en Lago Puelo, Patagonia, rodeado de vegetación de montaña"
             width={1920}
             height={1280}
             fetchPriority="high"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-right-bottom"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/20 to-paper" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/50 to-paper/80" />
         </div>
       </div>
 
