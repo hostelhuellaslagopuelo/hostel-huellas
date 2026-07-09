@@ -37,7 +37,7 @@ export function Hero() {
             fetchPriority="high"
             className="w-full h-full object-cover object-right-bottom"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/50 to-paper/80" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
       </div>
 
