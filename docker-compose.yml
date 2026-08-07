@@ -1,0 +1,28 @@
+# Base de datos local para desarrollo.
+# Se levanta automáticamente con `npm run dev` (ver script "predev" en package.json)
+# o manualmente con `npm run db:up`.
+#
+# Es un Postgres estándar: NO es Neon. En producción se sigue usando Neon.
+# La app elige el driver según la connection string (ver src/lib/prisma.ts).
+
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: huellas-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: huellas
+      POSTGRES_PASSWORD: huellas
+      POSTGRES_DB: huellas
+    ports:
+      - "5432:5432"
+    volumes:
+      - huellas_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U huellas -d huellas"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  huellas_db_data:

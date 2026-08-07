@@ -13,6 +13,10 @@ export type Habitacion = {
   ideal: string;
 };
 
+// Todos los precios se muestran POR PERSONA / noche. A partir de la 3ª persona
+// se aplica un descuento; este texto se muestra junto al precio en las páginas.
+export const DESCUENTO_NOTA = "Descuento a partir de la 3ª persona";
+
 export const habitaciones: Habitacion[] = [
   {
     slug: "dorm1",
@@ -165,7 +169,7 @@ export const habitaciones: Habitacion[] = [
       "Con cocina propia, baño y living. La opción más independiente de Huellas, ideal para estadías largas, parejas o grupos que quieren tener su propio espacio sin alejarse del hostel. Cocinás a tu hora, llegás cuando querés. Tu casa en Lago Puelo.",
     capacity: "Hasta 4 personas",
     price: "Consultar",
-    tag: "Por noche",
+    tag: "Por noche / persona",
     img: "/assets/habitaciones/depto-1.jpg",
     images: [
       "/assets/habitaciones/depto-1.jpg",

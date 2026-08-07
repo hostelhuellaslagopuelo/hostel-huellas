@@ -6,6 +6,16 @@ datasource db {
   provider = "postgresql"
 }
 
+// Precio editable por alojamiento (se administra desde el panel).
+// El resto del contenido del alojamiento (fotos, descripciones, etc.) vive en
+// src/lib/alojamiento.ts. Acá solo guardamos el precio, que es lo que cambia.
+// precioARS = null significa "Consultar".
+model AlojamientoPrecio {
+  slug          String   @id
+  precioARS     Int?
+  actualizadoEn DateTime @updatedAt @default(now())
+}
+
 model Reserva {
   id              String   @id @default(cuid())
   creadoEn        DateTime @default(now())

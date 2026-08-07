@@ -3,9 +3,13 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { habitaciones } from "@/lib/alojamiento";
+import type { Habitacion } from "@/lib/alojamiento";
 
-export function AlojamientoPreview() {
+export function AlojamientoPreview({
+  habitaciones,
+}: {
+  habitaciones: Habitacion[];
+}) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [canPrev, setCanPrev] = useState(false);
   const [canNext, setCanNext] = useState(false);

@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { habitaciones } from "@/lib/alojamiento";
+import { type Habitacion } from "@/lib/alojamiento";
+import { PromoDescuento } from "./PromoDescuento";
 
-export function Habitaciones() {
+export function Habitaciones({ habitaciones }: { habitaciones: Habitacion[] }) {
   return (
     <section className="bg-paper py-8 md:py-16 pb-28 md:pb-40">
       <div className="max-w-7xl mx-auto px-6 space-y-16 md:space-y-24">
@@ -60,22 +61,21 @@ export function Habitaciones() {
                   <div className="text-[10px] uppercase tracking-[0.2em] text-ink/40 mt-1">
                     {h.tag}
                   </div>
+                  <PromoDescuento className="mt-3" />
                 </div>
-                <div className="ml-auto flex items-center gap-3">
+                <div className="ml-auto flex flex-wrap items-center gap-3">
                   <Link
                     href={`/alojamiento/${h.slug}`}
-                    className="text-[11px] uppercase tracking-[0.18em] text-forest underline underline-offset-4 decoration-clay decoration-2 hover:text-clay transition-colors font-medium"
+                    className="border border-forest/30 text-forest px-6 py-3 rounded-full text-sm font-medium uppercase tracking-[0.18em] hover:border-clay hover:text-clay transition-all"
                   >
-                    Ver detalle →
+                    Ver detalles
                   </Link>
-                  <a
-                    href={`https://wa.me/5492323334671?text=Hola%21%20Quiero%20consultar%20disponibilidad%20para%20${encodeURIComponent(h.title)}%20en%20Hostel%20Huellas%20Puelo%20%F0%9F%8C%BF`}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/contacto"
                     className="bg-forest text-beige px-6 py-3 rounded-full text-sm font-medium uppercase tracking-[0.18em] hover:bg-moss hover:-translate-y-0.5 transition-all shadow-md"
                   >
-                    Consultar
-                  </a>
+                    Reservar
+                  </Link>
                 </div>
               </div>
             </div>

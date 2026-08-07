@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { WallOfFootprints } from "@/components/mainpage";
 import { Footprint } from "@/components/shared/footprint";
+import { getHabitacionesConPrecio } from "@/lib/precios";
 
 import {
   Hero,
@@ -43,14 +44,15 @@ export const metadata = {
   },
 };
 
-export default function InicioPage() {
+export default async function InicioPage() {
+  const habitaciones = await getHabitacionesConPrecio();
   return (
     <>
       <Header />
       <main>
         <Hero />
         <Historia />
-        <AlojamientoPreview />
+        <AlojamientoPreview habitaciones={habitaciones} />
         <PorQueHuellas />
         <ExperienciasPreview />
         <WallOfFootprints />

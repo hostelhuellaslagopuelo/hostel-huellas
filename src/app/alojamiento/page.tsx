@@ -6,6 +6,7 @@ import { CtaComponent } from "@/components/shared/CtaComponent";
 import { Hero } from "@/components/alojamiento/Hero";
 import { Habitaciones } from "@/components/alojamiento/Habitaciones";
 import { InfoSection } from "@/components/alojamiento/InfoSection";
+import { getHabitacionesConPrecio } from "@/lib/precios";
 
 export const metadata = {
   title: "Alojamiento — Hostel Huellas Puelo",
@@ -26,13 +27,14 @@ export const metadata = {
   },
 };
 
-export default function AlojamientoPage() {
+export default async function AlojamientoPage() {
+  const habitaciones = await getHabitacionesConPrecio();
   return (
     <>
       <Header />
       <main>
         <Hero />
-        <Habitaciones />
+        <Habitaciones habitaciones={habitaciones} />
         <InfoSection />
         <CtaComponent
           title="Escribinos y armamos el plan a tu medida."

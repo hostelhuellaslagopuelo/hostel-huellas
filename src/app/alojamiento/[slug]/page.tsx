@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { habitaciones } from "@/lib/alojamiento";
+import { getHabitacionesConPrecio } from "@/lib/precios";
 import { DetailsHero } from "@/components/alojamiento/DetailsHero";
 import { DetailsGallery } from "@/components/alojamiento/DetailsGallery";
 import { DetailsServices } from "@/components/alojamiento/DetailsServices";
@@ -46,10 +47,11 @@ export default async function AlojamientoDetallePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const h = habitaciones.find((x) => x.slug === slug);
+  const habitacionesConPrecio = await getHabitacionesConPrecio();
+  const h = habitacionesConPrecio.find((x) => x.slug === slug);
   if (!h) notFound();
 
-  const otras = habitaciones.filter((x) => x.slug !== slug);
+  const otras = habitacionesConPrecio.filter((x) => x.slug !== slug);
 
   return (
     <>
