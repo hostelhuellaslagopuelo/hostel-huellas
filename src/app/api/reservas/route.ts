@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse, after } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { verifySession } from "@/lib/admin-auth";
 import { sendReservationEmails } from "@/lib/email-sender";
@@ -181,17 +181,26 @@ export async function POST(req: NextRequest) {
     },
   });
 
-  // Fire-and-forget: do not await so the API responds immediately
-  sendReservationEmails({
-    id: reserva.id,
-    nombre: reserva.nombre,
-    apellido: reserva.apellido,
-    email: reserva.email,
-    checkIn: reserva.checkIn,
-    checkOut: reserva.checkOut,
-    tipoAlojamiento: reserva.tipoAlojamiento,
-    cantPersonas: reserva.cantPersonas,
-  }).catch((err) => console.error("[email] failed:", err));
+  // Los emails salen DESPUES de responder, pero dentro del ciclo de vida de la
+  // request: after() mantiene viva la funcion serverless hasta que terminan.
+  // Sin esto, en Vercel la funcion se congela al devolver la respuesta y el
+  // envio queda a medias (andaba en local, fallaba en produccion).
+  after(async () => {
+    try {
+      await sendReservationEmails({
+        id: reserva.id,
+        nombre: reserva.nombre,
+        apellido: reserva.apellido,
+        email: reserva.email,
+        checkIn: reserva.checkIn,
+        checkOut: reserva.checkOut,
+        tipoAlojamiento: reserva.tipoAlojamiento,
+        cantPersonas: reserva.cantPersonas,
+      });
+    } catch (err) {
+      console.error("[email] failed:", err);
+    }
+  });
 
   return NextResponse.json({ ok: true, id: reserva.id });
 }
