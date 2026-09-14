@@ -123,9 +123,9 @@ export function EditarReservaModal({ reserva, onClose, onSuccess }: Props) {
               >
                 <option value="dorm">Dormitorio compartido</option>
                 <option value="privada-picos">Hab. 3 Picos</option>
-                <option value="privada-cuevas">Hab. Cuevas</option>
+                <option value="privada-cuevas">Hab. Currumahuida</option>
                 <option value="privada-huemul">Hab. Huemul</option>
-                <option value="departamento">Departamento</option>
+                <option value="departamento">Departamento Cuevas</option>
               </select>
             </div>
             <div>

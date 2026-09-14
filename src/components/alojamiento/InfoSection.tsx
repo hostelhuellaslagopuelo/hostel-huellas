@@ -7,7 +7,7 @@ const practico = [
   },
   {
     label: "Desayuno",
-    val: "No incluido. Disponible con cargo adicional — pan casero, mate, fruta.",
+    val: "No incluido. Disponible con cargo adicional — pan casero, mermelada casera, dulce de leche, manteca, leche, medialuna o huevo.",
   },
   {
     label: "Formas de pago",

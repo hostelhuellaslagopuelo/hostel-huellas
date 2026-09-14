@@ -55,9 +55,9 @@ export function OccupancyGrid({ reservas }: Props) {
   const rows = [
     { label: "Dormitorio", key: "dorm" as const },
     { label: "3 Picos", key: "picos" as const },
-    { label: "Cuevas", key: "cuevas" as const },
+    { label: "Currumahuida", key: "cuevas" as const },
     { label: "Huemul", key: "huemul" as const },
-    { label: "Depto.", key: "depto" as const },
+    { label: "Depto. Cuevas", key: "depto" as const },
   ];
 
   return (

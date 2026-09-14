@@ -1,7 +1,7 @@
 export const TIPO_LABELS: Record<string, string> = {
   dorm: "Cama en dormitorio compartido",
   privada: "Habitación privada",
-  departamento: "Departamento",
+  departamento: "Departamento Cuevas",
 };
 
 export interface EmailReservaData {

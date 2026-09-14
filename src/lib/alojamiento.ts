@@ -104,7 +104,7 @@ export const habitaciones: Habitacion[] = [
   },
   {
     slug: "privada-cuevas",
-    title: "Habitación Cuevas",
+    title: "Habitación Currumahuida",
     subtitle: "Un rincón íntimo en el corazón del hostel",
     desc: "Habitación privada con carácter propio. Rústica, cálida y tranquila.",
     descLong:
@@ -162,7 +162,7 @@ export const habitaciones: Habitacion[] = [
   },
   {
     slug: "departamento",
-    title: "Departamento",
+    title: "Departamento Cuevas",
     subtitle: "Tu casa en Lago Puelo",
     desc: "Con cocina y baño propios. Tu casa en Lago Puelo. Para 3 o 4 personas.",
     descLong:

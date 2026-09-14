@@ -20,12 +20,12 @@ type PrivateRoom = {
 const CATEGORY_OPTIONS: { value: Category; label: string; desc: string }[] = [
   { value: "dorm", label: "Dormitorio compartido", desc: "Hasta 10 personas" },
   { value: "privada", label: "Habitación privada", desc: "3 opciones disponibles" },
-  { value: "departamento", label: "Departamento", desc: "Hasta 4 personas" },
+  { value: "departamento", label: "Departamento Cuevas", desc: "Hasta 4 personas" },
 ];
 
 const PRIVATE_ROOMS: PrivateRoom[] = [
   { slug: "privada-picos", title: "Habitación 3 Picos", capacity: "1, 2 o 3 personas", maxPersonas: 3, desc: "Vista a los tres picos" },
-  { slug: "privada-cuevas", title: "Habitación Cuevas", capacity: "1 o 2 personas", maxPersonas: 2, desc: "Rústica e íntima" },
+  { slug: "privada-cuevas", title: "Habitación Currumahuida", capacity: "1 o 2 personas", maxPersonas: 2, desc: "Rústica e íntima" },
   { slug: "privada-huemul", title: "Habitación Huemul", capacity: "1, 2 o 3 personas", maxPersonas: 3, desc: "Amplia y luminosa" },
 ];
 

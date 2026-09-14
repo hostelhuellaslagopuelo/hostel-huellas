@@ -28,10 +28,10 @@ export type TipoData = { tipo: string; count: number; upcoming: number };
 export const TIPO_LABELS: Record<string, string> = {
   dorm: "Dormitorio",
   "privada-picos": "3 Picos",
-  "privada-cuevas": "Cuevas",
+  "privada-cuevas": "Currumahuida",
   "privada-huemul": "Huemul",
   privada: "Privada",           // fallback for legacy records
-  departamento: "Departamento",
+  departamento: "Departamento Cuevas",
 };
 
 export const TIPO_COLORS: Record<string, string> = {
