@@ -25,14 +25,14 @@ const CATEGORY_OPTIONS: { value: Category; label: string; desc: string }[] = [
 
 const PRIVATE_ROOMS: PrivateRoom[] = [
   { slug: "privada-picos", title: "Habitación 3 Picos", capacity: "1, 2 o 3 personas", maxPersonas: 3, desc: "Vista a los tres picos" },
-  { slug: "privada-cuevas", title: "Habitación Currumahuida", capacity: "1 o 2 personas", maxPersonas: 2, desc: "Rústica e íntima" },
+  { slug: "privada-cuevas", title: "Habitación Currumahuida", capacity: "1 a 4 personas", maxPersonas: 4, desc: "Rústica e íntima" },
   { slug: "privada-huemul", title: "Habitación Huemul", capacity: "1, 2 o 3 personas", maxPersonas: 3, desc: "Amplia y luminosa" },
 ];
 
 const MAX_PERSONAS: Record<string, number> = {
   dorm: 10,
   "privada-picos": 3,
-  "privada-cuevas": 2,
+  "privada-cuevas": 4,
   "privada-huemul": 3,
   departamento: 4,
 };

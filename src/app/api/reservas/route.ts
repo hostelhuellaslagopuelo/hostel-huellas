@@ -35,7 +35,7 @@ function getIp(req: NextRequest): string {
 const MAX_PERSONAS: Record<string, number> = {
   dorm: 10,
   "privada-picos": 3,
-  "privada-cuevas": 2,
+  "privada-cuevas": 4,
   "privada-huemul": 3,
   departamento: 4,
 };
